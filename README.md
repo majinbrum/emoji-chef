@@ -88,8 +88,10 @@ To get a local copy up and running follow these simple example steps.
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
-3. If you have one, you need to add your `API_KEY` inside a new `keys.js` file. Otherwise you can still try the app with a fixed example result.
-4. Open your web browser and navigate to http://localhost:3000.
+3. Create a `keys.js` file inside the main folder where you want to paste this code:
+   `export const API_KEY = "";`
+4. If you have one, you need to add your `API_KEY` inside the `"..."`. Otherwise you can still try the app with a fixed example result.
+5. Open your web browser and navigate to http://localhost:3000.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

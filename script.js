@@ -102,15 +102,22 @@ Your responses should be in JSON format only, like this example, but do not use 
 <h2>${content.title}</h2>
 <p>${content.ingredients}</p>
 <p>${content.instructions}</p>`;
+
+		modal.classList.remove("hidden");
+		loading.classList.add("hidden");
+		clearInterval(messageInterval);
 	} else {
 		modalContent.innerHTML = `\
 <h2>Avocado, Egg, and Cheese Cloud Toast</h2>
 <p>1 slice of bread, 1 egg, 1/4 avocado, 1 slice of cheese (your favorite kind)</p>
 <p>Toast the bread until golden brown. While the bread is toasting, mash the avocado with a fork. Once the bread is toasted, spread the mashed avocado on top. Crack the egg into a small bowl and whisk it with a fork. Pour the whisked egg over the avocado, then top with the cheese. Place the toast under the broiler until the cheese is melted and bubbly. Let cool for a minute or two before digging in! Enjoy the savory, cloud-like texture of the egg!</p>`;
+
+		setTimeout(() => {
+			modal.classList.remove("hidden");
+			loading.classList.add("hidden");
+			clearInterval(messageInterval);
+		}, 2000);
 	}
-	modal.classList.remove("hidden");
-	loading.classList.add("hidden");
-	clearInterval(messageInterval);
 
 	clearBowl();
 }
