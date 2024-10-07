@@ -83,15 +83,8 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/majinbrum/emoji-chef.git
    ```
-2. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-3. Create a `keys.js` file inside the main folder where you want to paste this code:
-   `export const API_KEY = "";`
-4. If you have one, you need to add your `API_KEY` inside the `"..."`. Otherwise you can still try the app with a fixed example result.
-5. Open your web browser and navigate to http://localhost:3000.
+2. If you have one, you need to add your `API_KEY` inside the `"..."`. Otherwise you can still try the app with a fixed example result.
+3. Open your web browser and navigate to http://localhost:3000.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
